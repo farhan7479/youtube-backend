@@ -26,10 +26,10 @@ const connect = () => {
 //middlewares
 app.use(cookieParser())
 app.use(express.json());
-app.use("/api/", authRoutes);
-app.use("/api/", userRoutes);
-app.use("/api/", videoRoutes);
-app.use("/api/", commentRoutes);
+app.use("/api", authRoutes);
+app.use("/api", userRoutes);
+app.use("/api", videoRoutes);
+app.use("/api", commentRoutes);
 
 //error handler
 app.use((err, req, res, next) => {
