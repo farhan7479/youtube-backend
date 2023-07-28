@@ -4,7 +4,7 @@ import {verifyToken} from "../verifyToken.js"
 const router = express.Router();
 
 router.post("/addComment", verifyToken, addComment)
-router.delete("/:id", verifyToken, deleteComment)
-router.get("/:videoId", getComments)
+router.delete("/deleteComment/:id", verifyToken, deleteComment)
+router.get("/getComments/:videoId", getComments)
 
 export default router;
