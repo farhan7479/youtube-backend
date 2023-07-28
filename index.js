@@ -42,9 +42,9 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.get("/",()=>{
-  console.log('Server is running');
-})
+app.get("/", (req, res) => {
+  res.send("<h1>Welcome to ecommerce app</h1>");
+});
 
 app.listen(PORT, () => {
   connect();
