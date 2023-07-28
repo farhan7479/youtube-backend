@@ -8,7 +8,7 @@ const router = express.Router();
 router.post("/addvideo", verifyToken, addVideo)
 router.put("/updateVideo/:id", verifyToken, updateVideo)
 router.delete("/deleteVideo/:id", verifyToken, deleteVideo)
-router.get("/fgetVideo/:id", getVideo)
+router.get("/getVideo/:id", getVideo)
 router.put("/addView/:id", addView)
 router.get("/trend", trend)
 router.get("/random", random)
