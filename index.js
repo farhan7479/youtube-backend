@@ -42,6 +42,10 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get("/",()=>{
+  console.log('Server is running');
+})
+
 app.listen(PORT, () => {
   connect();
   console.log("Connected to Server");
